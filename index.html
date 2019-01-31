@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 	<style>
 		html {
 			height: 120%;
@@ -51,41 +51,45 @@
 		}
 
 		li {
-			color: #000000;
+			color: #000;
 			font-family: "Garamond", Garamond, serif;
-			font-size: 20px;
-		}
-
-		ul {
-			color: #000000;
-			font-family: "Garamond", Garamond, serif;
-			font-size: 20px;
+			word-break: normal;
+			padding-left: 4vh;
+			margin: 0;
+			font-size: 18px;
+			position: relative;
 		}
         
 		p {
 			color: #fff;
-			font-family: Garamond;
+			font-family: "Garamond", Garamond, serif;
 			word-break: normal;
 			padding: 2vh;
-            padding-left: 5vh;
+            padding-left: 10px;
+            padding-right: 10px;
 			margin: 0;
 			font-size: 2.5vw;
 			position: relative;
-			top: 40%;
-			transform: translateY(-50%);
+            text-align: center;
+            transform: translateY(40%);
             
 		}
 
 		p2 {
 			color: #000;
-			font-family: Garamond;
+			font-family: "Garamond", Garamond, serif;
 			word-break: normal;
 			padding: 2vh;
 			margin: 0;
 			font-size: 18px;
 			position: relative;
+            font-weight: bold;
 		}
 		
+        img {
+    height: 240px;
+    max-height: 90%;
+}
 
 
 		@media (max-width:414px) {
@@ -112,7 +116,9 @@
 		}
 		
 		.parallax {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/9eCxlJVE/red-607751_960_720.png');
+			background-color: #BC3636;
+            background-image: url('https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/flowers.png');
+            background-repeat: repeat;
 			height: 120%; 
 			background-attachment: fixed;
 			background-position: center;
@@ -122,7 +128,7 @@
 		}
 
 		.parallax2 {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/FWdNrE22/orange-607751_960_720.png');
+			background-image: url('https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/fairys.png');
 			height: 120%; 
 			background-attachment: fixed;
 			background-position: center;
@@ -130,26 +136,7 @@
 			background-size: auto;
             		-webkit-overflow-scrolling: touch;
 		}
-		
-		.parallax3 {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/cY1XnqcU/blue-607751_960_720.png');
-			height: 120%; 
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: repeat;
-			background-size: auto;
-            		-webkit-overflow-scrolling: touch;
-		}
-		
-		.parallax4 {
-			background-image: url('https://usercontent.irccloud-cdn.com/file/yi6zwyOg/purple-607751_960_720.png');
-			height: 120%; 
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: repeat;
-			background-size: auto;
-            		-webkit-overflow-scrolling: touch;
-		}
+
         
 		.txtbox {
 			height: 75vh;
@@ -175,44 +162,9 @@
 			right: 0;
 			bottom: 0;
 			margin: auto;
+            overflow-y: scroll;
+            overflow-x: hidden;
 		}
-        
-		.column {
-		    float: left;
-		    width: 50%;
-		}
-
-		.row:after {
-		    content: "";
-		    display: table;
-		    clear: both;
-		}
-        
-	    #grid {
-          display: grid;
-          grid-gap: 10px;
-          grid-auto-flow: row;
-          justify-content: center;
-          grid-template-rows: repeat(auto-fill, 200px);
-          grid-template-columns: repeat(auto-fill, 400px);
-          grid-auto-columns: 250px;
-          grid-auto-rows: 250px;
-          padding-top: 5%;
-          padding-right: 50%;
-          padding-left: 50%;
-	    }
-
-	    #grid>div {
-          text-align: center;
-          position: relative;
-	    } 
-        
-        #grid> div span{
-          position:absolute;
-          left: 0;
-          right: 0;
-          bottom:0;
-        }
 
 	</style>
 </head>
@@ -227,19 +179,83 @@
   
   <div class="parallax">
   
-  	  	<div class="txtbox">
-          <div id="grid">
-          		<div style="color: white;"><span>I'm taco and heres some pokemon stuff. I have been collecting events since 2014. Check out the rest of my collection over at <a href="https://www.porybox.com/#/user/tacocat777" style="color: white;">Porybox</a>!</span></div>
-              <div><img src="https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/JigglyMask.png" style=" height: 75%;"><span></span></div> 
-              </div>
+          <div class="txtbox">
+        	<p>I'm taco and heres some pokemon stuff. I have been collecting events since 2014.<br><img src="https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/JigglyMask.png"><br>Check out the rest of my collection over at <a href="https://www.porybox.com/#/user/tacocat777" style="color: white;">Porybox</a>!</p>
         </div>
   </div>
 
   <!----------------------SECTION1------------------------>
 
   <div class="parallax2">
-      <div id="Unclaimed" style="background-color: rgba(187, 104, 52, 0.1); border: 15px double #bb6834; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Unclaimed</div>
-  	<div class="rectangle" style="background-color: #bb6834; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png');">
+      <div id="Unclaimed" style="background-color: rgba(251, 218, 229, 0.1); border: 15px double #E7C3CF; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Quicksand; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Unclaimed</div>
+  	<div class="rectangle" style="background-color: #FBDAE5; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png');">
+    
+<p2>From V1C1OU5LY (KOR Sun):</p2>
+<li>Kanto Cap Pikachu | 지우/171221</li>
+<center><p2>ABOVE: STOCK</p2></center>
+<strong><center>_____________________________________________________________________________________________________________________</center></strong>
+<center><p2>BELOW: JKSM'd (Save Managed)</p2></center>
+<br>
+
+<p2>From NinjaSpiderMonkey (NA X-- decrypted from a Powersave):</p2>
+<li>OCT2014 Diancie | OCT2014/10274</li>
+<li>Spooky Pumkaboo | Spooky2014/10014</li>
+
+<p2>From jeremyps (NA Sun):</p2>
+<li>NAIC18 Krookodile | 070618/ルイ</li>
+
+<p2>From froakiedokie (NA Sun):</p2>
+<li>Autumn League Shiny Mimikyu | https://imgur.com/a/1j8dPmd | 171007/포켓몬스토어</li>
+
+<p2>From KookyKracks (JPN Sun):</p2>
+<li>Corocoro Charizard | 565640/コロコロ</li>
+
+<p2>From regcmdr (JPN Sun):</p2>
+<li>PC Shaymin | 180425/ ポケセン</li>
+<li>PC  DX Pikachu & Snorlax | 180314/ポケカフェ</li>
+
+<p2>From heliogfonseca (NA Moon):</p2>
+<li>World Festival Fly/Surf Pikachu | 180427/월드페스티벌</li>
+
+<p2>From patchespatch04 (NA Moon):</p2>
+<li>Melemele Tapu Koko | 170714/Melemele</li>
+<li>Rocky Lycanroc | 051517/Rocky</li>
+<li>Kanto/Hoenn Ash Hat Pikachu (first distrobution/universal serial code)</li>
+
+<p2>From expiredjellybean (NA US):</p2>
+<li>NA Wifi Rockruff | Alice/065384</li>
+<li>NA Wifi Rockruff | Balboa/156746</li>
+<li>NA Wifi Rockruff  | iLiekMudkipz/809979</li>
+<li>NA Wifi Rockruff | Pepe/579515</li>
+<li>NA Wifi Rockruff  | Subaru/654435</li>
+
+<p2>From XavierOrland (JPN US/UM):</p2>
+<li>PJCS Golduck (on saves created by pokeflan/twiodo)</li>
+
+<p2>Self Obtained:</p2>
+<li>NA WCS18 Meloettta | 082418/Worlds18</li>
+<li>NA 2018 Legends Dialga/Palkia | 020218/2018 Legends</li>
+<li>NA 2018 Legends Raiku/Entei | 042218/2018 Legends</li>
+<li>NA 2018 Legends Xerneas/Yveltal | 050418/2018 Legends</li>
+<li>NA 2018 Legends Zygarde | 060218/2018 Legends</li>
+<li>NA 2018 Legends Thundurus/Tornadus | 070618/2018 Legends</li>
+<li>NA 2018 Legends Groudon | 080318/2018 Legends</li>
+<li>NA 2018 Legends Latios/Latias | 090118/2018 Legends</li>
+<li>NA 2018 Legends Reshiram/Zekrom | 100518/2018 Legends</li>
+<li>NA 2018 Legends Lugia/Hooh | 110218/2018 Legends</li>
+<li>NA Ultra Shiny Poipole | 091718/Ultra</li>
+<li>NA Fula City Zeraora | 100118/Fula City</li>
+<li>JPN Wind Lugia | 180413/フウラシティ</li>
+<li>JPN Niconico Corsola (on saves created by pokeflan) | 180114/はじめ</li>
+<li>JPN Corocoro Arceus (on saves created by pokeflan) | 180115/コロコロ</li>
+<li>JPN LINE Rotom  (on saves created by pokeflan) | 171117/ククイ</li>
+<li>KOR Ultra Shiny Poipole (serial code distribution) | 180331/울트라</li>
+<li>KOR Ultra Shiny Kyogre/Groudon (universal serial code) | 180127/울트라</li>
+<li>KOR Pokemon Generations Zygarde (universal serial code) | 180620/제너레이션즈</li>
+<li>KOR/JPN/ENG PGL Tapu Lele (181130|아칼라/181130|アーカラ/113018|Akala)</li>
+<li>KOR Fula City Zeraora</li>
+
+    
     </div>
   </div>
 	
