@@ -86,53 +86,7 @@
 			position: relative;
 		}
 		
-		.nav {
-			height: 58px;
-			width: 100%;
-			background-color: #4d4d4d;
-			position: relative;
-			text-align:center;
-			font-family: Garamond;
-			text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px  black, 0 -1px 2px black;
-		}
 
-		.nav > .nav-header {
-			display: none;
-
-		}
-
-		.nav > .nav-header > .nav-title {
-			display: inline-block;
-			font-size: 22px;
-			color: #fff;
-			padding: 13px 0px 0px 20px;
-
-		}
-
-		.nav > .nav-btn {
-			display: none;
-		}
-
-		.nav > .nav-links {
-			display: inline;
-			font-size: 18px;
-		}
-
-		.nav > .nav-links > a {
-			display: inline-block;
-			padding: 17px 17px 17px 17px;
-			text-decoration: none;
-			color: #efefef;
-		}
-
-		.nav > .nav-links > a:hover {
-			background-color: rgba(0, 0, 0, 0.3);
-			height: 24px;
-		}
-
-		.nav > #nav-check {
-			display: none;
-		}
 
 		@media (max-width:414px) {
 			.header {
@@ -149,64 +103,6 @@
 			
 			img {
 				top: 14vh;
-			}
-            
-			.nav > .nav-header {
-				display: inline;
-			}
-
-			.nav > .nav-btn {
-				display: inline-block;
-				position: absolute;
-				right: 0px;
-				top: 0px;
-			}
-
-			.nav > .nav-btn > label {
-				display: inline-block;
-				width: 40px;
-				padding: 13px;
-			}
-
-			.nav > .nav-btn > label:hover {
-				background-color: rgba(0, 0, 0, 0.3);
-				height: 28px;
-			}
-
-			.nav > .nav-btn > label > span {
-				display: block;
-				width: 30px;
-				float: right;
-				padding: 2px;
-				height: 1px;
-				border: 2px solid #eee;
-				border-radius: 2px;
-			}
-
-			.nav > .nav-links {
-				position: absolute;
-				display: block;
-				width: 100%;
-				background-color: #333;
-				height: 0px;
-				transition: all 0.3s ease-in;
-				overflow-y: hidden;
-				top: 50px;
-				left: 0px;
-			}
-
-			.nav > .nav-links > a {
-				display: block;
-				left: 50%;
-			}
-
-			.nav > #nav-check:not(:checked) + .nav-links {
-				height: 0px;
-			}
-
-			.nav > #nav-check:checked + .nav-links {
-				height: 165px;
-				overflow: hidden;
 			}
             
 		}		
@@ -293,7 +189,6 @@
 		}
         
 	    #grid {
-          width: 40%;
           display: grid;
           grid-gap: 10px;
           grid-auto-flow: row;
@@ -304,7 +199,7 @@
           grid-auto-rows: 250px;
           padding-top: 5%;
           padding-right: 50%;
-          padding-left: 30%;
+          padding-left: 50%;
 	    }
 
 	    #grid>div {
