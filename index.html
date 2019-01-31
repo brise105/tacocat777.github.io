@@ -1,7 +1,352 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+	<style>
+		html {
+			height: 120%;
+		}
+
+		body {
+			margin: 0;
+			font-size: 28px;
+			height: 100%;
+		}
+
+		.header {
+			background-color: #f1f1f1;
+			background-size: auto;
+			padding: 30px;
+			text-align: center;
+			color: #000000;
+		}
+        
+		h2 {
+        	font-family: "Garamond", Garamond, serif;
+			font-size: 7vw;
+			font-weight: bold;
+            
+		}
+
+		h3 {
+        	font-family: "Garamond", Garamond, serif;
+			font-size: 4vw;
+		}
+		h4 {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 42px;
+		}
+		h5 {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+
+		strong {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+
+		li {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+
+		ul {
+			color: #000000;
+			font-family: "Garamond", Garamond, serif;
+			font-size: 20px;
+		}
+        
+		p {
+			color: #fff;
+			font-family: Garamond;
+			word-break: normal;
+			padding: 2vh;
+            padding-left: 5vh;
+			margin: 0;
+			font-size: 2.5vw;
+			position: relative;
+			top: 40%;
+			transform: translateY(-50%);
+            
+		}
+
+		p2 {
+			color: #000;
+			font-family: Garamond;
+			word-break: normal;
+			padding: 2vh;
+			margin: 0;
+			font-size: 18px;
+			position: relative;
+		}
+		
+		.nav {
+			height: 58px;
+			width: 100%;
+			background-color: #4d4d4d;
+			position: relative;
+			text-align:center;
+			font-family: Garamond;
+			text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px  black, 0 -1px 2px black;
+		}
+
+		.nav > .nav-header {
+			display: none;
+
+		}
+
+		.nav > .nav-header > .nav-title {
+			display: inline-block;
+			font-size: 22px;
+			color: #fff;
+			padding: 13px 0px 0px 20px;
+
+		}
+
+		.nav > .nav-btn {
+			display: none;
+		}
+
+		.nav > .nav-links {
+			display: inline;
+			font-size: 18px;
+		}
+
+		.nav > .nav-links > a {
+			display: inline-block;
+			padding: 17px 17px 17px 17px;
+			text-decoration: none;
+			color: #efefef;
+		}
+
+		.nav > .nav-links > a:hover {
+			background-color: rgba(0, 0, 0, 0.3);
+			height: 24px;
+		}
+
+		.nav > #nav-check {
+			display: none;
+		}
+
+		@media (max-width:414px) {
+			.header {
+				visibility: hidden;
+				height: 0px;
+				padding: 0px;
+				position: fixed;
+                		display: inline;
+			}
+            
+			p {
+				font-size: 16px;
+			}
+			
+			img {
+				top: 14vh;
+			}
+            
+			.nav > .nav-header {
+				display: inline;
+			}
+
+			.nav > .nav-btn {
+				display: inline-block;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+			}
+
+			.nav > .nav-btn > label {
+				display: inline-block;
+				width: 40px;
+				padding: 13px;
+			}
+
+			.nav > .nav-btn > label:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+				height: 28px;
+			}
+
+			.nav > .nav-btn > label > span {
+				display: block;
+				width: 30px;
+				float: right;
+				padding: 2px;
+				height: 1px;
+				border: 2px solid #eee;
+				border-radius: 2px;
+			}
+
+			.nav > .nav-links {
+				position: absolute;
+				display: block;
+				width: 100%;
+				background-color: #333;
+				height: 0px;
+				transition: all 0.3s ease-in;
+				overflow-y: hidden;
+				top: 50px;
+				left: 0px;
+			}
+
+			.nav > .nav-links > a {
+				display: block;
+				left: 50%;
+			}
+
+			.nav > #nav-check:not(:checked) + .nav-links {
+				height: 0px;
+			}
+
+			.nav > #nav-check:checked + .nav-links {
+				height: 165px;
+				overflow: hidden;
+			}
+            
+		}		
+		
+		.content {
+			padding: 16px;
+		}
+		
+		.parallax {
+			background-image: url('https://usercontent.irccloud-cdn.com/file/9eCxlJVE/red-607751_960_720.png');
+			height: 120%; 
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: repeat;
+			background-size: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.parallax2 {
+			background-image: url('https://usercontent.irccloud-cdn.com/file/FWdNrE22/orange-607751_960_720.png');
+			height: 120%; 
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: repeat;
+			background-size: auto;
+            		-webkit-overflow-scrolling: touch;
+		}
+		
+		.parallax3 {
+			background-image: url('https://usercontent.irccloud-cdn.com/file/cY1XnqcU/blue-607751_960_720.png');
+			height: 120%; 
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: repeat;
+			background-size: auto;
+            		-webkit-overflow-scrolling: touch;
+		}
+		
+		.parallax4 {
+			background-image: url('https://usercontent.irccloud-cdn.com/file/yi6zwyOg/purple-607751_960_720.png');
+			height: 120%; 
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: repeat;
+			background-size: auto;
+            		-webkit-overflow-scrolling: touch;
+		}
+        
+		.txtbox {
+			height: 75vh;
+			width: 100%;
+			background-color: rgba(77, 77, 77, 0.8);
+			position: relative;
+			top: 24%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+            min-height: 240x;
+		}
+		
+		.rectangle {
+			height: 75vh;
+			width: 80vw;
+			border-radius: 25px;
+			background-color: #ffffff;
+			position: relative;
+			top: 100px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+        
+		.column {
+		    float: left;
+		    width: 50%;
+		}
+
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
+        
+	    #grid {
+          width: 40%;
+          display: grid;
+          grid-gap: 10px;
+          grid-auto-flow: row;
+          justify-content: center;
+          grid-template-rows: repeat(auto-fill, 200px);
+          grid-template-columns: repeat(auto-fill, 400px);
+          grid-auto-columns: 250px;
+          grid-auto-rows: 250px;
+          padding-top: 10%;
+          padding-right: 50%;
+          padding-left: 30%;
+	    }
+
+	    #grid>div {
+          text-align: center;
+          position: relative;
+	    } 
+        
+        #grid> div span{
+          position:absolute;
+          left: 0;
+          right: 0;
+          bottom:0;
+        }
+
+	</style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <!----------------------HOME-SECTION------------------------>
+  <div class="header">
+    <h2 id="Home">/u/tacocat777</h2>
+    <h3>Unclaimed Events</h3>
+  </div>
+  
+  <div class="parallax">
+  
+  	  	<div class="txtbox">
+          <div id="grid">
+          		<div style="color: white;"><span>I'm taco and heres some pokemon stuff. I have been collecting events since 2014. Check out the rest of my collection over at <a href="https://www.porybox.com/#/user/tacocat777" style="color: white;">Porybox</a>!</span></div>
+              <div><img src="https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/JigglyMask.png" style=" height: 75%;"><span></span></div> 
+              </div>
+        </div>
+  </div>
+
+  <!----------------------SECTION1------------------------>
+
+  <div class="parallax2">
+      <div id="Unclaimed" style="background-color: rgba(187, 104, 52, 0.1); border: 15px double #bb6834; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Megrim; font-color: #000000; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 0 4px black, 0 2px 4px black, 2px 0 4px  black, 0 -2px 4px black; font-weight: bold; position: relative;">Unclaimed</div>
+  	<div class="rectangle" style="background-color: #bb6834; background-image: url('https://usercontent.irccloud-cdn.com/file/XrultFnN/geometric-patterns-1978688_960_720.png');">
+    </div>
+  </div>
+	
 </body>
 </html>
